@@ -9,3 +9,14 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'homes';
 }
+
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+
+@Component ({
+  selector: 'mat-slide-toggle',
+  imports: [
+    MatSlideToggleModule,
+  ]
+})
+class AppComponent2 {}
+// https://material.angular.io/guide/getting-started
