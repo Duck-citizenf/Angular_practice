@@ -13,10 +13,9 @@ export class AppComponent {
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 
 @Component ({
-  selector: 'mat-slide-toggle',
   imports: [
     MatSlideToggleModule,
   ]
 })
-class AppComponent2 {}
+export class AppComponent2 {}
 // https://material.angular.io/guide/getting-started
