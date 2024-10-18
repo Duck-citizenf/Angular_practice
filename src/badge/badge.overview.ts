@@ -11,16 +11,6 @@ import {MatBadgeModule} from '@angular/material/badge';
     template:`
       <div matBadge="4" matBadgeOverlap="false" class="demo-section">Text with a badge</div>
   
-      <div matBadge="1" matBadgeSize="small" class="demo-section">Text with small badge</div>
-      <div matBadge="1" matBadgeSize="large" class="demo-section">Text with large badge</div>
-  
-      <div class="demo-section">
-      Button with a badge on the left
-      <button mat-raised-button matBadge="8" matBadgePosition="before">
-        Action
-      </button>
-      </div>
-  
       <div class="demo-section">
         Button toggles badge visibility
         <button mat-raised-button matBadge="7" [matBadgeHidden]="hidden" (click)="toggleBadgeVisibility()">
