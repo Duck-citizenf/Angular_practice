@@ -6,7 +6,8 @@ import {MatNativeDateModule} from '@angular/material/core';
 import { AppComponent} from './app/app.component';
 import { provideNoopAnimations } from '@angular/platform-browser/animations';
 import {BadgeComponent} from './badge/badge.overview';
-import {DatepickerComponent} from './badge/datepicker'
+import {IconComponent} from './badge/badge.overview';
+import {DatepickerComponent} from './datepicker'
 
 bootstrapApplication(AppComponent, {
     providers: [
@@ -21,6 +22,13 @@ bootstrapApplication(BadgeComponent, {
   ]
 }).catch(err => console.error(err));
 bootstrapApplication(DatepickerComponent, {
+  providers: [
+    provideAnimations(),
+    provideHttpClient(),
+    importProvidersFrom(MatNativeDateModule)
+  ]
+}).catch(err => console.error(err));
+bootstrapApplication(IconComponent, {
   providers: [
     provideAnimations(),
     provideHttpClient(),
